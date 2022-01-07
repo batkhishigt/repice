@@ -1,9 +1,5 @@
-const arr = [1, 2, 3];
 
-let myfunc = a => {
-    console.log(`number : ${a}`);
-}
+import Search from "./model/Search";
 
-
-const arr2 = [...arr, 22, 223];
-myfunc(arr2)
+let search = new Search('pasta');
+search.doSearch().then(r => console.log(r))

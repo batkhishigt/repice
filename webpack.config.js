@@ -4,7 +4,7 @@ module.exports = {
     entry: './src/js/index.js',
     devtool: 'inline-source-map',
     devServer: {
-        static: './dist',
+        static: './docs',
     },
     module: {
         rules: [
@@ -21,8 +21,8 @@ module.exports = {
         ]
     },
     output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'dist'),
+        filename: 'js/main.js',
+        path: path.resolve(__dirname, 'docs'),
     },
     plugins: [
         new HtmlWebpackPlugin({  // Also generate a test.html
