@@ -13,7 +13,11 @@ export default class Repice {
         this.publisher_url = result.data.recipe.publisher_url;
         this.title = result.data.recipe.title;
         this.social_rank = result.data.recipe.social_rank;
-        console.log(this.title)
-        console.log(this.ingredients)
+    }
+    calTime() {
+        this.time = this.ingredients.length * 5;
+    }
+    calHuniiToo() {
+        this.huniiToo = 4;
     }
 }
